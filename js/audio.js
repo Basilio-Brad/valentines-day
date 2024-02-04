@@ -47,6 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   setTimeout(() => {
-    window.location.href = "./../reaction.html";
+    window.location.href = "reaction.html";
   }, 33000);
 });
