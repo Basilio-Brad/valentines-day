@@ -1,0 +1,25 @@
+.heart {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.568);
+  height: 15px;
+  width: 15px;
+  z-index: 999999px;
+  clip-path: polygon(
+    30% 0%,
+    50.1% 15%,
+    70% 0%,
+    90% 10%,
+    100% 35%,
+    80% 70%,
+    50.1% 100%,
+    20% 70%,
+    0% 35%,
+    10% 10%
+  );
+  animation: heart infinite linear;
+}
+@keyframes heart {
+  to {
+    transform: translateY(100vh);
+  }
+}

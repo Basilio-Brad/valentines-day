@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-hearts.css" />
+    <link rel="stylesheet" href="css/style-reaction.css" />
+  </head>
+  <body>
+    <div class="particles-heart" id="particles"></div>
+    <section class="section flex-evenly flex-colum">
+      <audio id="music">
+        <source src="resources/music.mp3" type="audio/mp3" />
+
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      <section class="container" id="contenedor-heart">
+        <div class="flex h-medium">
+          <button
+            class="text-md flex btn-transparent w-50 font-rubik justify-center"
+            type="button"
+            id="quiero"
+          >
+            Quiero
+          </button>
+
+          <button
+            class="text-md flex btn-transparent w-50 font-rubik justify-center"
+            type="button"
+            id="que"
+          >
+            Que
+          </button>
+        </div>
+        <button
+          class="text-md flex btn-transparent w-100 font-rubik justify-center"
+          type="button"
+          id="decirte"
+        >
+          Decirte
+        </button>
+        <p id="quiero-text" class="card text-sm font-courgette">
+          ...Contigo crear historias tantas que sean imposibles de
+          enumerarlas...
+        </p>
+        <p id="que-text" class="card text-sm font-courgette">
+          ...Sean tan invaluables los segundos y minutos que se suele pasar
+          juntos...
+        </p>
+        <p id="decirte-text" class="card text-sm font-courgette">
+          ...lo maravillosa y radiante que eres y ademas mencionarte que...
+        </p>
+        <p id="tkm-text" class="card text-md sin-card font-rubik">
+          Te Quiero Mucho
+        </p>
+      </section>
+      <p
+        id="thanks"
+        class="text-center font-rubik text-md color-love font-bolder"
+      >
+        Gracias por permitirme acompañarla en su camino...
+      </p>
+
+      <span class="text-center font-courgette color-gray font-lighter span"
+        >by Dramático ❤</span
+      >
+    </section>
+    <script src="js/hearts.js"></script>
+    <script src="js/reaction.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.flex {
+  display: flex;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-medium {
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+#rigth-heart {
+  background-color: red;
+  border-radius: 50%;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  animation: pulse-rotate 2s ease 0s 1 normal forwards;
+}
+
+#left-heart {
+  background-color: red;
+  border-radius: 50%;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  animation: pulse-rotate 2s ease 0s 1 normal forwards;
+}
+
+#quiero {
+  position: relative;
+}
+
+#que {
+  position: relative;
+}
+#decirte {
+  position: relative;
+}
+.animation-ids {
+  animation: aparecer 2s forwards;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#bottom-heart {
+  background-color: red;
+  height: 200px;
+
+  top: -142px;
+
+  position: absolute;
+  width: 200px;
+  animation: pulse-rotate 2s ease 0s 1;
+  transform: rotate(-45deg);
+}
+
+@keyframes pulse-rotate {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.719);
+  border: 1px dashed gray;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 99999px;
+  max-width: 300px;
+  padding: 1rem;
+  text-align: center;
+  top: 40%;
+  animation: myCard 2s ease 0s 1 normal none;
+}
+.sin-card {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+@keyframes myCard {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+
+.animation-heart {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(0.9);
+  }
+}

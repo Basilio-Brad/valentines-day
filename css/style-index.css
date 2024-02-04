@@ -1,0 +1,16 @@
+.button-play {
+  border-radius: 1rem;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  animation: pulse 2s infinite linear;
+  padding: 1rem 2rem;
+  color: purple;
+  cursor: pointer;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}

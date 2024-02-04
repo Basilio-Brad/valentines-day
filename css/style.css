@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.section {
+  background-image: var(--dark-color);
+  max-width: 370px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.flex-colum {
+  flex-direction: column;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+
+.flex-end {
+  align-items: stretch;
+}
+.flex-center {
+  align-items: center;
+}
+.flex-evenly {
+  justify-content: space-evenly;
+}
+.font-rubik {
+  font-family: "Rubik puddles";
+}
+.text-lg {
+  font-size: 3rem;
+}
+.text-md {
+  font-size: 2rem;
+}
+.text-sm {
+  font-size: 1.2rem;
+}
+.text-center {
+  text-align: center;
+}
+.color-black {
+  color: black;
+}
+.color-love {
+  color: crimson;
+}
+.color-gray {
+  color: rgb(190, 190, 190);
+}
+.font-bolder {
+  font-weight: bolder;
+}
+.font-courgette {
+  font-family: "Courgette";
+}
+.font-lighter {
+  font-weight: lighter;
+}
+.span {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
