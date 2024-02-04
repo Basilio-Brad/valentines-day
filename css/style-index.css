@@ -14,3 +14,78 @@
     opacity: 0.9;
   }
 }
+#greats {
+  color: purple;
+}
+#valentines-day {
+  background-image: linear-gradient(
+    180deg,
+    crimson 0%,
+    rgba(220, 20, 60, 0.555)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.format-date {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+.format-date > div {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: dashed 2px blueviolet;
+  font-family: "Courgette";
+  font-weight: bolder;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+#day::after {
+  content: "Dias";
+  position: absolute;
+  top: -50%;
+  left: 0;
+
+  font-weight: lighter;
+  font-size: 0.9rem;
+
+  color: blueviolet;
+}
+#hours::after {
+  content: "Horas";
+  position: absolute;
+  top: -50%;
+  left: 0;
+
+  font-weight: lighter;
+  font-size: 0.9rem;
+
+  color: blueviolet;
+}
+
+#minutes::after {
+  content: "Minutos";
+  position: absolute;
+  top: -50%;
+  left: 0;
+
+  font-weight: lighter;
+  font-size: 0.9rem;
+
+  color: blueviolet;
+}
+#seconds::after {
+  content: "Segundos";
+  position: absolute;
+  top: -50%;
+  left: 0;
+
+  font-weight: lighter;
+  font-size: 0.9rem;
+
+  color: blueviolet;
+}

@@ -91,8 +91,8 @@
   }
 }
 .card {
-  background-color: rgba(255, 255, 255, 0.719);
-  border: 1px dashed gray;
+  background-color: rgba(255, 255, 255, 0.616);
+  border: none;
   border-radius: 1rem;
   position: absolute;
   z-index: 99999px;
@@ -100,7 +100,7 @@
   padding: 1rem;
   text-align: center;
   top: 40%;
-  animation: myCard 2s ease 0s 1 normal none;
+  animation: card-animation 2s ease 0s 1 normal none;
 }
 .sin-card {
   background-color: transparent;
@@ -108,7 +108,7 @@
   color: white;
   font-weight: bolder;
 }
-@keyframes myCard {
+@keyframes card-animation {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
@@ -159,4 +159,14 @@
   50% {
     transform: scale(0.9);
   }
+}
+#thanks {
+  background-image: linear-gradient(
+    180deg,
+    crimson 0%,
+    rgba(220, 20, 60, 0.555)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

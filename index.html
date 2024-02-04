@@ -12,21 +12,40 @@
     <div class="particles-heart" id="particles"></div>
     <section class="section flex-evenly flex-colum gap-1 p-2 f">
       <div>
-        <h1 id="greats" class="font-courgette text-sm text-center color-black font-lighter"></h1>
-      <h2 class="font-rubik text-center color-love text-lg">Dramática</h2>
+        <h1
+          id="greats"
+          class="font-courgette text-sm text-center color-black font-lighter"
+        ></h1>
+        <h2 class="font-rubik text-center color-love text-lg">Dramática</h2>
       </div>
-      <h2 class="font-courgette text-lg text-center color-love font-bolder">
+      <div id="date">
+        <h3 class="font-courgette text-sm text-center color-black font-lighter">
+          Faltan:
+        </h3>
+        <div class="format-date">
+          <div id="day"></div>
+          <div id="hours"></div>
+          <div id="minutes"></div>
+          <div id="seconds"></div>
+        </div>
+      </div>
+      <h2
+        id="valentines-day"
+        class="font-courgette text-lg text-center font-bolder"
+      >
         Happy Valentine's Day
       </h2>
       <button
+        id="btn-play"
         type="button"
         class="button-play font-rubik text-md font-bolder"
         onclick="fn_redirectToPage()"
       >
         Iniciar
       </button>
-      <span class="text-center font-courgette color-gray font-lighter span"
-        >by Dramático ❤</span
+      <span class="text-center font-courgette color-gray font-lighter span">
+        by Dramático ❤</span
+      >
     </section>
     <script src="js/main.js"></script>
 

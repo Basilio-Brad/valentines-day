@@ -90,4 +90,5 @@ body {
   bottom: 10%;
   left: 0;
   right: 0;
+  animation: span-animate 2s linear infinite;
 }
