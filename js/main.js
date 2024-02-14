@@ -24,7 +24,7 @@ const fn_redirectToPage = () => {
   window.location.href = "flowers.html";
 };
 
-const valentine_day = new Date("Feb 14, 2024").getTime();
+const valentine_day = new Date("Feb 14, 2024 17:30:00").getTime();
 const id_day = document.getElementById("day");
 const id_hours = document.getElementById("hours");
 const id_minutes = document.getElementById("minutes");
